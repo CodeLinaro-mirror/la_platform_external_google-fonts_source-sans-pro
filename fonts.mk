@@ -16,6 +16,7 @@
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
 # get installed too.
 
+ifneq ($(TARGET_BUILD_2W), true)
 PRODUCT_PACKAGES := \
     SourceSansPro-Regular.ttf \
     SourceSansPro-Italic.ttf \
@@ -23,3 +24,4 @@ PRODUCT_PACKAGES := \
     SourceSansPro-SemiBoldItalic.ttf \
     SourceSansPro-Bold.ttf \
     SourceSansPro-BoldItalic.ttf
+endif
